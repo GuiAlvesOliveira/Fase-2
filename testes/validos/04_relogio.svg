@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+  <g transform="translate(150 100)">
+    <circle cx="0" cy="0" r="80" fill="white" stroke="black" stroke-width="4"/>
+    <g transform="rotate(60)">
+      <line x1="0" y1="0" x2="0" y2="-45" fill="none" stroke="black" stroke-width="6"/>
+    </g>
+    <g transform="rotate(180)">
+      <line x1="0" y1="0" x2="0" y2="-65" fill="none" stroke="red" stroke-width="3"/>
+    </g>
+    <circle cx="0" cy="0" r="6" fill="black" stroke="black" stroke-width="1"/>
+  </g>
+</svg>

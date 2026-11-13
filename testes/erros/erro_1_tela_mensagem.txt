@@ -1,0 +1,2 @@
+Sintático: programa válido.
+Erro semântico: linha 1: a tela precisa ter largura e altura maiores que zero

@@ -1,0 +1,2 @@
+tela 400 0
+circulo 200 150 50 preenchimento amarelo

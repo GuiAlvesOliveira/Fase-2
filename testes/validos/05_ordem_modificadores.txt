@@ -1,0 +1,20 @@
+tela 400 200
+// a cruz cinza marca a origem do grupo de fora
+// esquerda: rotacao 90 e depois deslocamento 40 0 (anda no eixo girado: desce)
+grupo deslocamento 100 60 [
+    linha -10 0 10 0 traco cinza
+    linha 0 -10 0 10 traco cinza
+    grupo rotacao 90 deslocamento 40 0 [
+        linha 0 0 50 0 espessura 4
+        circulo 0 0 8 preenchimento vermelho traco vermelho
+    ]
+]
+// direita: deslocamento 40 0 e depois rotacao 90 (vai para a direita)
+grupo deslocamento 300 60 [
+    linha -10 0 10 0 traco cinza
+    linha 0 -10 0 10 traco cinza
+    grupo deslocamento 40 0 rotacao 90 [
+        linha 0 0 50 0 espessura 4
+        circulo 0 0 8 preenchimento vermelho traco vermelho
+    ]
+]

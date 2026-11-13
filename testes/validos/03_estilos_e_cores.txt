@@ -1,0 +1,5 @@
+tela 300 200
+// cores por nome e #RRGGBB; atributo repetido: vale o último
+retangulo 30 30 110 140 preenchimento vermelho preenchimento laranja espessura 6
+circulo 220 100 55 traco #008080 espessura 10
+linha 20 190 280 190 traco azul espessura 1 espessura 4

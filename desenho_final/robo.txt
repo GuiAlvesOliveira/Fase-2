@@ -1,0 +1,91 @@
+tela 400 400
+// fundo e chão
+retangulo 0 0 400 400 preenchimento #DDEEFF traco #DDEEFF
+retangulo 0 330 400 70 preenchimento #B0BEC5 traco #B0BEC5
+
+// robô: a origem fica no centro do tronco
+grupo deslocamento 200 215 [
+
+    // rodas (desenhadas antes do tronco, ficam atrás)
+    grupo deslocamento -35 92 [
+        circulo 0 0 22 preenchimento preto
+        grupo rotacao 30 [
+            linha -20 0 20 0 traco branco espessura 3
+        ]
+        grupo rotacao -60 [
+            linha -20 0 20 0 traco branco espessura 3
+        ]
+        circulo 0 0 5 preenchimento prata
+    ]
+    grupo deslocamento 35 92 [
+        circulo 0 0 22 preenchimento preto
+        grupo rotacao 30 [
+            linha -20 0 20 0 traco branco espessura 3
+        ]
+        grupo rotacao -60 [
+            linha -20 0 20 0 traco branco espessura 3
+        ]
+        circulo 0 0 5 preenchimento prata
+    ]
+
+    // pescoço e tronco
+    retangulo -12 -82 24 16 preenchimento cinza espessura 3
+    retangulo -60 -70 120 140 preenchimento #90A4AE espessura 3
+
+    // painel com luzes
+    retangulo -38 -48 76 40 preenchimento #37474F espessura 2
+    circulo -20 -28 7 preenchimento vermelho
+    circulo 0 -28 7 preenchimento amarelo
+    circulo 20 -28 7 preenchimento verde
+    linha -35 20 35 20 espessura 3
+    linha -35 35 35 35 espessura 3
+    linha -35 50 35 50 espessura 3
+
+    // braço esquerdo, abaixado: ombro → braço girado → mão → pinças
+    grupo deslocamento -60 -50 rotacao 25 [
+        retangulo -10 0 20 70 preenchimento prata espessura 3
+        circulo 0 0 12 preenchimento cinza espessura 3
+        grupo deslocamento 0 72 [
+            grupo rotacao 30 [
+                linha 0 0 0 24 espessura 5
+            ]
+            grupo rotacao -30 [
+                linha 0 0 0 24 espessura 5
+            ]
+            circulo 0 0 10 preenchimento cinza espessura 2
+        ]
+    ]
+
+    // braço direito, acenando
+    grupo deslocamento 60 -50 rotacao -150 [
+        retangulo -10 0 20 70 preenchimento prata espessura 3
+        circulo 0 0 12 preenchimento cinza espessura 3
+        grupo deslocamento 0 72 [
+            grupo rotacao 30 [
+                linha 0 0 0 24 espessura 5
+            ]
+            grupo rotacao -30 [
+                linha 0 0 0 24 espessura 5
+            ]
+            circulo 0 0 10 preenchimento cinza espessura 2
+        ]
+    ]
+
+    // cabeça
+    grupo deslocamento 0 -115 [
+        retangulo -53 -12 8 24 preenchimento cinza espessura 2
+        retangulo 45 -12 8 24 preenchimento cinza espessura 2
+        retangulo -45 -35 90 70 preenchimento prata espessura 3
+        circulo -18 -8 11 preenchimento branco espessura 2
+        circulo 18 -8 11 preenchimento branco espessura 2
+        circulo -18 -8 4 preenchimento preto
+        circulo 18 -8 4 preenchimento preto
+        linha -20 18 20 18 espessura 3
+
+        // antena, inclinada
+        grupo deslocamento 0 -35 rotacao 15 [
+            linha 0 0 0 -28 espessura 3
+            circulo 0 -28 6 preenchimento vermelho espessura 2
+        ]
+    ]
+]

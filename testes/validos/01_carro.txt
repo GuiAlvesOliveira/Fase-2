@@ -1,0 +1,12 @@
+tela 400 300
+// um carro simples
+retangulo 50 150 200 60 preenchimento azul
+grupo deslocamento 70 190 [
+    circulo 0 0 25 preenchimento preto
+    grupo rotacao 45 [
+        linha 0 0 20 0 traco branco espessura 2
+    ]
+]
+grupo deslocamento 200 190 [
+    circulo 0 0 25 preenchimento preto
+]

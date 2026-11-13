@@ -1,0 +1,5 @@
+tela 300 200
+// formas sem estilo: traço preto, espessura 1 e sem preenchimento
+linha 30 40 270 40
+retangulo 50 80 200 80
+circulo 150 120 25

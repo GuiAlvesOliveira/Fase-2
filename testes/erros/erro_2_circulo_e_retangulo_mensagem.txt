@@ -1,0 +1,3 @@
+Sintático: programa válido.
+Erro semântico: linha 5: o círculo precisa ter raio maior que zero
+Erro semântico: linha 8: o retângulo precisa ter largura e altura maiores que zero

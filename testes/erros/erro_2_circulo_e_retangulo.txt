@@ -1,0 +1,8 @@
+tela 400 300
+retangulo 50 150 200 60 preenchimento azul
+grupo deslocamento 70 190 [
+    grupo rotacao 45 [
+        circulo 0 0 0 preenchimento preto
+    ]
+]
+retangulo 10 10 0 40

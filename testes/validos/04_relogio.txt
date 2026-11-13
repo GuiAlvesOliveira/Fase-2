@@ -1,0 +1,12 @@
+tela 300 200
+// grupos aninhados: o deslocamento leva a origem ao centro e as rotações giram os ponteiros
+grupo deslocamento 150 100 [
+    circulo 0 0 80 preenchimento branco espessura 4
+    grupo rotacao 60 [
+        linha 0 0 0 -45 espessura 6
+    ]
+    grupo rotacao 180 [
+        linha 0 0 0 -65 traco vermelho espessura 3
+    ]
+    circulo 0 0 6 preenchimento preto
+]
